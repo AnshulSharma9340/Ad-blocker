@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <span class="dot" id="status-dot"></span>
+    <h1>Advanced Ad Blocker</h1>
+  </header>
+
+  <div class="count">
+    <div class="count-num" id="count">0</div>
+    <div class="count-label">requests blocked</div>
+  </div>
+
+  <div class="row">
+    <div class="row-text">
+      <strong>Blocking</strong>
+      <small id="global-sub">Enabled everywhere</small>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="global-toggle" />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="row">
+    <div class="row-text">
+      <strong>This site</strong>
+      <small id="site-host">—</small>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="site-toggle" />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <button id="reset" class="link">Reset counter</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
